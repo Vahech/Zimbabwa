@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+iframe {
+    margin: auto;
+    width: 100%;
+    }
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+<script>
+var videocode =[33574069,34213616,17113189,16397202,15479721,15288542,14965120,46958613];
+//var videouser =[9624769,9624769,46958613,4730191];
+//var videodescription=[];
+</script>
+
+
+<script>
+var i; 
+for (i=0; i<videocode.length; i++) {
+document.write("<div class='responsive'><div class='img'><iframe src='https://player.vimeo.com/video/"+videocode[i]+"' width='590' height='362' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"+"</div></div>");
+}
+</script>      
+    
+
+<!--p><a href='https://vimeo.com/"+videocode[i]+"'>Miss Hungary photo camp 2011</a> from <a href='https://vimeo.com/user"+videouser[i]+"'>www.luckystarimages.com</a> on <a href='https://vimeo.com'>Vimeo</a>.</p-->
+
+</body>
+</html>
+
+
